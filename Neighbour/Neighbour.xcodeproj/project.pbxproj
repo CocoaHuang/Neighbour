@@ -17,7 +17,11 @@
 		187C840F1BE8B74D0014E89C /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C840E1BE8B74D0014E89C /* TabBarController.m */; };
 		187C84121BE8B7700014E89C /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C84111BE8B7700014E89C /* NavigationController.m */; };
 		187C84181BE8B8600014E89C /* BlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C84171BE8B8600014E89C /* BlockButton.m */; };
-		187C841C1BE8BC090014E89C /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 187C841B1BE8BC090014E89C /* HttpRequest.m */; };
+		18E167231BE9918B007577CA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E167211BE9918B007577CA /* LoginViewController.m */; };
+		18E167241BE9918B007577CA /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E167221BE9918B007577CA /* LoginViewController.xib */; };
+		18E1672B1BE99274007577CA /* Simulator Screen Shot 2015年10月22日 上午11.40.08.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E1672A1BE99274007577CA /* Simulator Screen Shot 2015年10月22日 上午11.40.08.png */; };
+		18E1672D1BE99763007577CA /* item30x30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18E1672C1BE99763007577CA /* item30x30@2x.png */; };
+		18E167311BE9A467007577CA /* DataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E167301BE9A467007577CA /* DataRequest.m */; };
 		A5F8F7AA585DA666419B026D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AACF908A6C5F28E83D03B0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +57,13 @@
 		187C84151BE8B7EB0014E89C /* PchHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PchHeader.pch; sourceTree = "<group>"; };
 		187C84161BE8B8600014E89C /* BlockButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockButton.h; sourceTree = "<group>"; };
 		187C84171BE8B8600014E89C /* BlockButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockButton.m; sourceTree = "<group>"; };
-		187C841A1BE8BC090014E89C /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
-		187C841B1BE8BC090014E89C /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		18E167201BE9918B007577CA /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		18E167211BE9918B007577CA /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		18E167221BE9918B007577CA /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		18E1672A1BE99274007577CA /* Simulator Screen Shot 2015年10月22日 上午11.40.08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot 2015年10月22日 上午11.40.08.png"; sourceTree = "<group>"; };
+		18E1672C1BE99763007577CA /* item30x30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "item30x30@2x.png"; sourceTree = "<group>"; };
+		18E1672F1BE9A467007577CA /* DataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataRequest.h; sourceTree = "<group>"; };
+		18E167301BE9A467007577CA /* DataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataRequest.m; sourceTree = "<group>"; };
 		9C012370F6D9183141135FCF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A139322240102D405199EB05 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F9AACF908A6C5F28E83D03B0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +111,7 @@
 		187C83DE1BE8B54F0014E89C /* Neighbour */ = {
 			isa = PBXGroup;
 			children = (
+				18E1672E1BE9A456007577CA /* DataRequest */,
 				187C84051BE8B5A40014E89C /* Contents */,
 				187C84061BE8B5A40014E89C /* Others */,
 				187C84071BE8B5A40014E89C /* Resources */,
@@ -146,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				187C84091BE8B5C00014E89C /* BaseControllers */,
+				18E1671F1BE9915B007577CA /* Login:register */,
 			);
 			path = Contents;
 			sourceTree = "<group>";
@@ -162,6 +173,8 @@
 		187C84071BE8B5A40014E89C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				18E1672C1BE99763007577CA /* item30x30@2x.png */,
+				18E1672A1BE99274007577CA /* Simulator Screen Shot 2015年10月22日 上午11.40.08.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -169,7 +182,6 @@
 		187C84081BE8B5A40014E89C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				187C84191BE8BBF40014E89C /* HttpRequest */,
 				187C84161BE8B8600014E89C /* BlockButton.h */,
 				187C84171BE8B8600014E89C /* BlockButton.m */,
 			);
@@ -189,13 +201,23 @@
 			path = BaseControllers;
 			sourceTree = "<group>";
 		};
-		187C84191BE8BBF40014E89C /* HttpRequest */ = {
+		18E1671F1BE9915B007577CA /* Login:register */ = {
 			isa = PBXGroup;
 			children = (
-				187C841A1BE8BC090014E89C /* HttpRequest.h */,
-				187C841B1BE8BC090014E89C /* HttpRequest.m */,
+				18E167201BE9918B007577CA /* LoginViewController.h */,
+				18E167211BE9918B007577CA /* LoginViewController.m */,
+				18E167221BE9918B007577CA /* LoginViewController.xib */,
 			);
-			path = HttpRequest;
+			path = "Login:register";
+			sourceTree = "<group>";
+		};
+		18E1672E1BE9A456007577CA /* DataRequest */ = {
+			isa = PBXGroup;
+			children = (
+				18E1672F1BE9A467007577CA /* DataRequest.h */,
+				18E167301BE9A467007577CA /* DataRequest.m */,
+			);
+			path = DataRequest;
 			sourceTree = "<group>";
 		};
 		8C1BE8ADBD941D933F01A98A /* Pods */ = {
@@ -297,7 +319,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E167241BE9918B007577CA /* LoginViewController.xib in Resources */,
+				18E1672D1BE99763007577CA /* item30x30@2x.png in Resources */,
 				187C83EB1BE8B5500014E89C /* Main.storyboard in Resources */,
+				18E1672B1BE99274007577CA /* Simulator Screen Shot 2015年10月22日 上午11.40.08.png in Resources */,
 				187C83F01BE8B5500014E89C /* LaunchScreen.xib in Resources */,
 				187C83ED1BE8B5500014E89C /* Images.xcassets in Resources */,
 			);
@@ -350,13 +375,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E167231BE9918B007577CA /* LoginViewController.m in Sources */,
 				187C84181BE8B8600014E89C /* BlockButton.m in Sources */,
 				187C83E51BE8B5500014E89C /* AppDelegate.m in Sources */,
 				187C840F1BE8B74D0014E89C /* TabBarController.m in Sources */,
 				187C84121BE8B7700014E89C /* NavigationController.m in Sources */,
-				187C841C1BE8BC090014E89C /* HttpRequest.m in Sources */,
 				187C840C1BE8B7310014E89C /* RootViewController.m in Sources */,
 				187C83E21BE8B5500014E89C /* main.m in Sources */,
+				18E167311BE9A467007577CA /* DataRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
