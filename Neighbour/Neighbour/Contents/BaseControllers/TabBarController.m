@@ -8,6 +8,7 @@
 
 #import "TabBarController.h"
 #import "NavigationController.h"
+#import "BaseTabBar.h"
 
 @interface TabBarController ()
 
@@ -18,14 +19,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //创建Nav
     [self createNav];
+    [self createTabBarItem];
+}
+
+- (void)createTabBarItem
+{
+    BaseTabBar *myTabBar = [[BaseTabBar alloc] initWithFrame:self.tabBar.bounds];
+    [self.tabBar addSubview:myTabBar];
+    [myTabBar addItemWithTitle:@"活动" normalImg:@"huodong" selectImg:@"huodonglv"];
+    [myTabBar addItemWithTitle:@"发布" normalImg:@"fabu" selectImg:@"fabulv"];
+    [myTabBar addItemWithTitle:@"中心" normalImg:@"geren" selectImg:@"gerenlv"];
+    myTabBar.blockClick = ^(NSInteger index){
+        self.selectedIndex = index;
+    };
 }
 
 - (void)createNav
 {
     //加控制器
-    [self addNavgationWithVcStr:@"LoginViewController" normalImg:@"item30x30@2x" selectImg:@"item30x30@2x"];
+    [self addNavgationWithVcStr:@"ActivityViewController" normalImg:nil selectImg:nil];
+    [self addNavgationWithVcStr:@"PublishViewController" normalImg:nil selectImg:nil];
+    [self addNavgationWithVcStr:@"CentreViewController" normalImg:nil selectImg:nil];
+
 }
 
 - (void)addNavgationWithVcStr:(NSString *)vcStr normalImg:(NSString *)normalStr selectImg:(NSString *)selectStr
@@ -33,11 +49,7 @@
     Class vc = NSClassFromString(vcStr);
     UIViewController *viewVC = [[vc alloc] init];
     NavigationController *nav = [[NavigationController alloc] initWithRootViewController:viewVC];
-    //viewVC.title = @"看看";
-    [viewVC.tabBarItem setImage:[UIImage imageNamed:normalStr]];
-    UIImage *img = [[UIImage imageNamed:selectStr] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    [viewVC.tabBarItem setSelectedImage:img];
-    NSMutableArray *muArr = [NSMutableArray arrayWithArray:self.childViewControllers];
+    NSMutableArray *muArr = [NSMutableArray arrayWithArray:self.viewControllers];
     [muArr addObject:nav];
     self.viewControllers = muArr;
 }

@@ -20,6 +20,7 @@
     // Override point for customization after application launch.
     [UIApplication sharedApplication].statusBarHidden = NO;
     self.window = [[UIWindow alloc] initWithFrame:UISCREEN_BOUNDS];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
     self.window.backgroundColor = [UIColor whiteColor];
     TabBarController *tabBar = [[TabBarController alloc] init];
     self.window.rootViewController = tabBar;

@@ -1,32 +1,22 @@
 //
-//  NavigationController.m
+//  PublishViewController.m
 //  Neighbour
 //
-//  Created by apple on 15/11/3.
+//  Created by apple on 15/11/7.
 //  Copyright (c) 2015年 com.zhoudao. All rights reserved.
 //
 
-#import "NavigationController.h"
+#import "PublishViewController.h"
 
-@interface NavigationController ()
+@interface PublishViewController ()
 
 @end
 
-@implementation NavigationController
+@implementation PublishViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //[self initNavgationBar];
-
-}
-
-/**
- *  初始化NavgationBar
- */
-- (void)initNavgationBar
-{
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:19],NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 
 - (void)didReceiveMemoryWarning {
